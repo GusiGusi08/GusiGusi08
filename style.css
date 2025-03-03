@@ -1,0 +1,131 @@
+.Logo {
+  width: 200px;
+}
+.search {
+  width: 200px;
+  height: 40px;
+  font-size: 1.6em;
+  border-radius: 5px;
+  margin-left: 150px;
+  padding-right: 900px;
+}
+.button {
+  background: url(img/user.jpg)
+  no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin-left: 200px;
+}
+
+.menu-bar {
+  background-color: #3b48ff;
+  overflow: hidden;
+}
+
+.menu-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar li {
+  float: left;
+}
+
+.menu-bar li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.menu-bar li a:hover {
+  background-color: #2cd7e6;
+}
+.data {
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 50px;
+  float: left;
+}
+.img-text {
+  margin-left: 165px;
+  font-size: 15px;
+}
+
+.img-text a {
+  text-decoration: none;
+}
+.h11 {
+  margin-left: 145px;
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+.text-info {
+  font-size: 25px;
+  margin-left: 570px;
+  padding-right: 660px;
+  margin-top: 100px;
+  color: black;
+  
+}
+.text-info2 {
+  font-size: 25px;
+  margin-left: 570px;
+  padding-right: 670px;
+  margin-top: 10px;
+  color: black;
+}
+.hjemme {
+  font-size: 50px;
+  color: black;
+  margin-top: 40px;
+  margin-left: 30px;
+  text-align: center;
+}
+.hjemme2 {
+  font-size: 30px;
+  color: black;
+  margin-left: 50px;
+  margin-top: 75px;
+}
+.hjemme3 {
+  font-size: 25px;
+  color: black;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+.vertical-line {
+  border-right: 8px solid rgb(0, 0, 0);
+  height: 210px;
+  display: block;
+  position: fixed;
+  left: 40px;
+  margin-top: 40px;
+}
+.vertical-line2 {
+  border-right: 8px solid rgb(0, 0, 0);
+  height: 350px;
+  display: block;
+  position: fixed;
+  left: 40px;
+  margin-top: 40px;
+  margin-left: 110px;
+}
+.hjemme4 {
+  font-size: 30px;
+  color: black;
+  margin-left: 160px;
+  margin-top: 75px;
+}
+.hjemme5 {
+  font-size: 25px;
+  color: black;
+  margin-left: 160px;
+  margin-top: 25px;
+}
