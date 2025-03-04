@@ -60,7 +60,7 @@
 }
 
 .data {
-  width: 100%;
+  width: 35%;
   margin: 20px auto;
   display: block;
 }
@@ -79,6 +79,7 @@
   margin: 10px auto;
   text-align: center;
   max-width: 90%;
+  font-size: 35px
 }
 
 .daglig-leder {
