@@ -8,7 +8,7 @@
 }
 
 .search {
-  width: 360px;
+  width: 300px;
   height: 40px;
   font-size: 1.6em;
   border-radius: 5px;
@@ -83,7 +83,7 @@
 }
 
 .daglig-leder {
-  width: 47%;
+  width: 37%;
   border-radius: 20px;
   margin: 20px auto;
   display: block;
@@ -93,6 +93,7 @@ body {
   background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
   font-family: 'Roboto', sans-serif;
   padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -150,4 +151,22 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 600px) and (max-height: 900px) {
+  h1, h2, h3, h4, h5, h6 {
+    margin-left: 0;
+    text-align: center;
+  }
+  p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+li {
+  list-style-type: none;
+}
+.data2 {
+  width: 35%;
+  margin: 20px auto;
+  display: block;
+}
 
