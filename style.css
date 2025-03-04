@@ -1,33 +1,43 @@
+
 .Logo {
   width: 200px;
+  position: fixed;
+  top: -60px;
+  left: 10px;
+  z-index: 1000;
 }
+
 .search {
-  width: 200px;
+  width: 360px;
   height: 40px;
   font-size: 1.6em;
   border-radius: 5px;
-  margin-left: 150px;
-  padding-right: 900px;
-}
-.button {
-  background: url(img/user.jpg)
-  no-repeat;
-  background-size: contain;
-  width: 50px;
-  height: 50px;
-  border: none;
-  margin-left: 200px;
+  position: fixed;
+  top: 10px;
+  left: 220px;
+  z-index: 1100;
+  padding-right: 20px;
 }
 
+
 .menu-bar {
-  background-color: #3b48ff;
-  overflow: hidden;
+  background-color: rgb(20, 4, 164);
+  position: fixed;
+  top: 65px;
+  width: 100%;
+  z-index: 1100;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .menu-bar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .menu-bar li {
@@ -41,142 +51,102 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .menu-bar li a:hover {
-  background-color: #2cd7e6;
+  background-color: #185d77;
 }
+
 .data {
-  width: 400px;
-  margin-left: 100px;
-  margin-top: 50px;
-  float: left;
-}
-.img-text {
-  margin-left: 165px;
-  font-size: 15px;
+  width: 100%;
+  margin: 20px auto;
+  display: block;
 }
 
-.img-text a {
-  text-decoration: none;
-}
-.h11 {
-  margin-left: 145px;
-  margin-top: 60px;
-  font-size: 30px;
-}
-
-.text-info {
-  font-size: 25px;
-  margin-left: 570px;
-  padding-right: 660px;
-  margin-top: 100px;
-  color: black;
-  
-}
-.text-info2 {
-  font-size: 25px;
-  margin-left: 570px;
-  padding-right: 670px;
-  margin-top: 10px;
-  color: black;
-}
-.hjemme {
-  font-size: 50px;
-  color: black;
-  margin-top: 40px;
-  margin-left: 30px;
-  text-align: center;
-}
-.hjemme2 {
-  font-size: 30px;
-  color: black;
-  margin-left: 50px;
-  margin-top: 75px;
-}
-.hjemme3 {
-  font-size: 25px;
-  color: black;
-  margin-left: 50px;
-  margin-top: 25px;
-}
-.vertical-line {
-  border-right: 8px solid rgb(0, 0, 0);
-  height: 210px;
-  display: block;
-  position: fixed;
-  left: 40px;
-  margin-top: 40px;
-}
-.vertical-line2 {
-  border-right: 8px solid rgb(0, 0, 0);
-  height: 350px;
-  display: block;
-  position: fixed;
-  left: 40px;
-  margin-top: 40px;
-  margin-left: 110px;
-}
-.hjemme4 {
-  font-size: 30px;
-  color: black;
-  margin-left: 160px;
-  margin-top: 75px;
-}
-.hjemme5 {
-  font-size: 25px;
-  color: black;
-  margin-left: 160px;
-  margin-top: 25px;
-  width: 400px;
-}
-.daglig-leder {
-  width: 550px;
-  border-radius: 20px;
-  margin-left: 700px;
-  margin-top: -200px;
-  margin-right: 30px;
-  
-}
-.daglig-leder-tekst {
-  margin-top: 20px;
-  margin-left: 850px;
-  font-size: 25px;
-}
+.img-text,
+.h11,
+.text-info,
+.text-info2,
+.hjemme,
+.hjemme2,
+.hjemme3,
+.hjemme4,
+.hjemme5,
+.daglig-leder-tekst,
 .daglig-leder-tekst2 {
-  margin-left: 935px;
-  margin-top: -15px;
+  margin: 10px auto;
+  text-align: center;
+  max-width: 90%;
 }
-.vertical-line3 {
-  border-right: 8px solid rgb(0, 0, 0);
-  height: 100px;
+
+.daglig-leder {
+  width: 50%;
+  border-radius: 20px;
+  margin: 20px auto;
   display: block;
-  position: fixed;
-  left: 40px;
-  margin-top: 150px;
-  margin-left: 800px;
 }
+
+body {
+  background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+  font-family: 'Roboto', sans-serif;
+  padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: #214654;
+  text-shadow: 2px 2px #d8bfd8;
+  padding-top: 100px;
+}
+
+button {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9370db;
+}
+
+a {
+  color: #4b0082;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #9370db;
+}
+
+.text-info, .text-info2 {
+  line-height: 1.6;
+}
+
+@keyframes particle-animation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+
+
 @media only screen and (max-width: 600px) and (max-height: 900px) {
-  .daglig-leder {
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .daglig-leder-tekst {
-    margin-left: 0px;
-    margin-top: 20px;
-    text-align: center;
-  }
+  .daglig-leder,
+  .daglig-leder-tekst,
   .daglig-leder-tekst2 {
-    margin-left: 0px;
-    margin-top: -15px;
+    margin-left: 0;
     text-align: center;
   }
-  .vertical-line3 {
-    display: block;
-  }
 }
-html, body {
-  height: 1300px;
-}
+
 
