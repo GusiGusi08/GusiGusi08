@@ -12,4 +12,4 @@ window.addEventListener("resize", function() {
         document.body.style.zoom = "";
     }
   })
-
+ 
