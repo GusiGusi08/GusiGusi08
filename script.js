@@ -1,6 +1,6 @@
 window.addEventListener("resize", function() {
-    if (window.innerWidth < 601) {
-        document.body.style.zoom = window.innerWidth / 600 + "";
+    if (window.innerWidth < 589) {
+        document.body.style.zoom = window.innerWidth / 590 + "";
     } else {
         document.body.style.zoom = "";
     }
