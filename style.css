@@ -1,6 +1,6 @@
-
 .Logo {
   width: 200px;
+  max-width: 100%;
   position: fixed;
   top: -60px;
   left: 10px;
@@ -9,6 +9,7 @@
 
 .search {
   width: 300px;
+  max-width: 80%;
   height: 40px;
   font-size: 1.6em;
   border-radius: 5px;
@@ -19,7 +20,6 @@
   padding-right: 20px;
 }
 
-
 .menu-bar {
   background-color: rgb(20, 4, 164);
   position: fixed;
@@ -28,6 +28,7 @@
   z-index: 1100;
   padding: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -38,6 +39,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-bar li {
@@ -79,7 +81,7 @@
   margin: 10px auto;
   text-align: center;
   max-width: 90%;
-  font-size: 35px
+  font-size: 35px;
 }
 
 .daglig-leder {
@@ -94,11 +96,13 @@ body {
   font-family: 'Roboto', sans-serif;
   padding-top: 100px;
   padding-bottom: 200px;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+  text-align: center;
 }
 
 h1 {
@@ -135,65 +139,184 @@ a:hover {
   line-height: 1.6;
 }
 
-@media only screen and (max-width: 600px) and (max-height: 900px) {
-  .daglig-leder,
-  .daglig-leder-tekst,
-  .daglig-leder-tekst2 {
-    margin-left: 0;
-    text-align: center;
-  }
-  .daglig-leder {
-    margin-left: 150px;
-  }
-}
-
-@media only screen and (max-width: 600px) and (max-height: 900px) {
-  h1, h2, h3, h4, h5, h6 {
-    margin-left: 0;
-    text-align: center;
-  }
-  p {
-    margin-left: 0;
-    text-align: center;
-  }
-}
 li {
   list-style-type: none;
 }
+
 .data2 {
   width: 35%;
   margin: 20px auto;
   display: block;
 }
+
 .hjemme2 {
   color: #276256;
   font-weight: bold;
 }
+
 .hjemme3 {
   color: #0b4f9d;
   font-weight: bold;
 } 
-  
+
 .hjemme4 {
   color: #174b87;
   font-weight: bold;
 }
+
 .hjemme5 {
   color: #1d589a;
   font-weight: bold;
 }
+
 .text-info {
   color: #623f73;
   font-weight: bold;
 }
+
 .text-info2 {
   color: #623f73;
 }
+
 .daglig-leder-tekst {
   color: #276256;
   font-weight: bold;
 }
+
 .daglig-leder-tekst2 {
   color: #345983;
   font-weight: bold;
 }
+
+/* Mobilvennlig styling */
+@media only screen and (max-width: 768px) {
+  .Logo {
+    width: 150px;
+    top: -40px;
+    left: 5px;
+  }
+
+  .search {
+    width: 80%;
+    height: 35px;
+    font-size: 1.4em;
+    top: 5px;
+    left: 10%;
+  }
+
+  .menu-bar {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .menu-bar ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-bar li {
+    width: 100%;
+  }
+
+  .menu-bar li a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 26px;
+    padding-top: 50px;
+  }
+
+  .data,
+  .data2,
+  .daglig-leder {
+    width: 90%;
+  }
+
+  .text-info, 
+  .text-info2,
+  .hjemme,
+  .hjemme2,
+  .hjemme3,
+  .hjemme4,
+  .hjemme5,
+  .daglig-leder-tekst,
+  .daglig-leder-tekst2 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Logo {
+    width: 120px;
+    top: -30px;
+    left: 5px;
+  }
+
+  .search {
+    width: 70%;
+    height: 30px;
+    font-size: 1.2em;
+    left: 15%;
+  }
+
+  .menu-bar li a {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .text-info, 
+  .text-info2,
+  .hjemme,
+  .hjemme2,
+  .hjemme3,
+  .hjemme4,
+  .hjemme5,
+  .daglig-leder-tekst,
+  .daglig-leder-tekst2 {
+    font-size: 24px;
+  }
+}
+
+/* Ekstremt små skjermer (for eksempel gamle telefoner) */
+@media only screen and (max-width: 320px) {
+  .Logo {
+    width: 100px;
+    top: -20px;
+    left: 5px;
+  }
+
+  .search {
+    width: 60%;
+    height: 25px;
+    font-size: 1em;
+    left: 20%;
+  }
+
+  .menu-bar {
+    font-size: 80%;
+  }
+
+  .menu-bar li a {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .text-info, 
+  .text-info2,
+  .hjemme,
+  .hjemme2,
+  .hjemme3,
+  .hjemme4,
+  .hjemme5,
+  .daglig-leder-tekst,
+  .daglig-leder-tekst2 {
+    font-size: 20px;
+  }
+}
+  .search {
+    width: 45%;
+    margin-left: 100px;
+  }
