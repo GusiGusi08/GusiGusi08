@@ -1,15 +1,7 @@
 window.addEventListener("resize", function() {
-    if (window.innerWidth < 601) {
-        document.body.style.zoom = window.innerWidth / 600 + "";
-    } else {
-        document.body.style.zoom = "";
+    if (window.innerWidth < 301) {
+        document.body.style.zoom = window.innerWidth / 300 + "";
+    } else if (window.innerWidth < 351) {
+        document.body.style.zoom = window.innerWidth / 350 + "";
     }
-  })
-  window.addEventListener("load", function() {
-    if (window.innerWidth < 600) {
-        document.body.style.zoom = window.innerWidth / 599 + "";
-    } else {
-        document.body.style.zoom = "";
-    }
-  })
- 
+});
