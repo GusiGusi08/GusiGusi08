@@ -253,6 +253,9 @@ li {
   .daglig-leder-tekst2 {
     font-size: 28px;
   }
+  .hjemme {
+    margin-top: 200px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -286,6 +289,9 @@ li {
   .daglig-leder-tekst,
   .daglig-leder-tekst2 {
     font-size: 24px;
+  }
+  .hjemme {
+    margin-top: 200px;
   }
 }
 
@@ -324,10 +330,4 @@ h2 {
 }
 .data2 {
   width: 15%;
-}
-@media screen and (max-width: 768px) {
-  .hjemme {
-    margin-top: 200px;
-  }
-  
 }
