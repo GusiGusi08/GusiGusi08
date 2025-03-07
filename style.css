@@ -8,7 +8,7 @@
 }
 
 .search {
-  width: 300px;
+  width: 800px;
   max-width: 80%;
   height: 40px;
   font-size: 1.6em;
@@ -18,6 +18,7 @@
   left: 220px;
   z-index: 1100;
   padding-right: 20px;
+  margin-left: 100px;
 }
 
 .menu-bar {
@@ -65,6 +66,12 @@
   width: 35%;
   margin: 20px auto;
   display: block;
+}
+.data1 {
+  width: 35%;
+  margin: 20px auto;
+  display: block;
+  margin-top: 200px;
 }
 
 .img-text,
@@ -250,16 +257,18 @@ li {
 
 @media only screen and (max-width: 480px) {
   .Logo {
-    width: 120px;
-    top: -30px;
+    width: 30%;
+    margin-top: 35px;
     left: 5px;
   }
 
   .search {
-    width: 70%;
+    width: 40%;
     height: 30px;
     font-size: 1.2em;
     left: 15%;
+    margin-left: 120px;
+    margin-top: 15px;
   }
 
   .menu-bar li a {
@@ -281,41 +290,8 @@ li {
 }
 
 /* Ekstremt små skjermer (for eksempel gamle telefoner) */
-@media only screen and (max-width: 320px) {
-  .Logo {
-    width: 100px;
-    top: -20px;
-    left: 5px;
-  }
 
-  .search {
-    width: 60%;
-    height: 25px;
-    font-size: 1em;
-    left: 20%;
-  }
 
-  .menu-bar {
-    font-size: 80%;
-  }
-
-  .menu-bar li a {
-    font-size: 14px;
-    padding: 6px;
-  }
-
-  .text-info, 
-  .text-info2,
-  .hjemme,
-  .hjemme2,
-  .hjemme3,
-  .hjemme4,
-  .hjemme5,
-  .daglig-leder-tekst,
-  .daglig-leder-tekst2 {
-    font-size: 20px;
-  }
-}
 body {
   overflow: auto;
 }
@@ -325,21 +301,7 @@ body {
   backdrop-filter: blur(50px); /* legger til blur effekt */
   position: fixed;
 }
-.top-text
-.Logo
-.search
-.menu-bar
-{
-  backdrop-filter: blur(50px); /* legger til blur effekt */
-  position: fixed;
-  background-color: rgb(245, 245, 245);
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 10px;
-}
+
 
 .menu-bar {
   top: 65px;
@@ -353,10 +315,10 @@ body {
   z-index: 1000;
 }
 
-.search {
-  top: 10px;
-  left: 220px;
-  z-index: 1100;
-  margin-left: 100px;
+h2 {
+  padding-top: 100px;
 }
 
+.h11 {
+  margin-top: 150px;
+}
