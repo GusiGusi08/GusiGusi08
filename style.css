@@ -316,7 +316,47 @@ li {
     font-size: 20px;
   }
 }
-  .search {
-    width: 45%;
-    margin-left: 100px;
-  }
+body {
+  overflow: auto;
+}
+
+.menu-bar {
+  background-color: rgba(#2b4d6e); /* halvgjennomsiktig bakgrunn */
+  backdrop-filter: blur(50px); /* legger til blur effekt */
+  position: fixed;
+}
+.top-text
+.Logo
+.search
+.menu-bar
+{
+  backdrop-filter: blur(50px); /* legger til blur effekt */
+  position: fixed;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-bar {
+  top: 65px;
+  width: 100%;
+  z-index: 1100;
+}
+
+.Logo {
+  top: -60px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.search {
+  top: 10px;
+  left: 220px;
+  z-index: 1100;
+  margin-left: 100px;
+}
+
